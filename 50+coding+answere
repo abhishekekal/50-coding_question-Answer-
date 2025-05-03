@@ -1,0 +1,3267 @@
+
+
+1. Write a java program to Print elements from1D array using for- 
+loop. 
+Input : arr[]={1,2,3,4,5,6}; 
+Output: 1 2 3 4 5 6 
+-----------------
+
+int arr[]={1,2,3,4,5,6};
+       for(int i=0;i<arr.length;i++){
+           System.out.print(arr[i]);
+       }
+
+------------------------
+2. Write a java program to Print elements from1D array using while- 
+loop. 
+Input : arr[]={1,2,3,4,5,6}; 
+Output: 1 2 3 4 5 6 
+
+int i=0;
+    while(i<arr.length){
+        System.out.print(arr[i]);
+        i++;
+      }
+
+
+3. Write a java program to Print elements from1D array using 
+do- while loop. 
+Input : arr[]={1,2,3,4,5,6}; 
+Output: 1 2 3 4 5 6 
+
+ int i=0;
+    do{
+        System.out.print(arr[i]);
+        i++;
+    }while(i<arr.length );
+
+
+ 4. Write a java program to Print elements from 1D array using 
+for-each loop. 
+Input : arr[]={1,2,3,4,5,6}; 
+Output: 1 2 3 4 5 6 
+
+
+for(int i:arr){
+    System.out.print(i);
+}
+
+
+5. Write a java program to Print elements from2D array using for- 
+loop. 
+Ip : arr={{1,2,3},{4,5,6}}; 
+Op: 1 2 3 
+4 5 6 
+
+
+  for(int i=0;i<arr.length;i++){
+           for(int j=0;j<arr[i].length;j++){
+               System.out.print(arr[i][j]+" ");
+           }
+       
+           System.out.println();
+           
+       }
+ 
+
+6.Write a java program to Print elements from 2D array using while 
+loop. 
+Ip : arr={{1,2,3},{4,5,6}}; 
+Op: 1 2 3 
+4 5 6 
+
+
+int i=0;
+      while(i<arr.length){
+       int j=0;  
+         while(j<arr[i].length){
+             System.out.print(arr[i][j]+" ");
+             j++;
+         }
+         System.out.println();
+         i++;
+     }
+
+
+7.Write a java program to Print elements from 2D array using do- 
+while loop. 
+Ip : arr={{1,2,3},{4,5,6}}; 
+Op: 1 2 3 
+4 5 6
+int i=0; 
+     do{
+        int j=0;
+        do{
+            System.out.print(arr[i][j]+" ");
+            j++;
+        }while(j<arr[i].length);
+        System.out.println();
+        i++;
+     }while(i<arr.length);
+	 
+
+
+8.Write a java program to Print elements from 2D array using for- 
+each loop. 
+
+Ip : arr={{1,2,3},{4,5,6}}; 
+Op: 1 2 3 
+4 5 6 
+
+
+ for(int a[]:arr){
+         for(int b:a){
+             System.out.print(b+" ");
+         }
+         System.out.println();
+     }
+
+
+
+9.Write a java program to Print elements from3D array using for- 
+loop. 
+
+
+ int arr[][][]={{{1,2,3},{3,2,1}},{{4,5,6},{6,5,4}},{{7,8,9},{9,8,7}}};
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                for(int k=0;k<arr[i][j].length;k++){
+                    System.out.print(arr[i][j][k]+" ");
+                }
+                
+            }
+            System.out.println();
+        }
+
+
+
+10.Write a java program to Print elements from 3D array using 
+while-loop. 
+
+
+ int arr[][][]={{{1,2,3},{3,2,1}},{{4,5,6},{6,5,4}},{{7,8,9},{9,8,7}}};
+        int i=0;
+        while(i<arr.length){
+          int j=0;
+            while(j<arr[i].length){
+                int k=0;
+                while(k<arr[i][j].length){
+                    System.out.print(arr[i][j][k]+" ");
+                    k++;
+                }
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+		
+		
+11.Write a java program to Print elements from 3D array using do- 
+while loop.
+
+
+        int arr[][][]={{{1,2,3},{3,2,1}},{{4,5,6},{6,5,4}},{{7,8,9},{9,8,7}}};
+       int i=0;
+      do{
+          int j=0;
+          do{
+           int k=0;
+           do{
+              System.out.print(arr[i][j][k]+" ") ;
+              k++;
+           }while(k<arr[i][j].length);
+           j++;
+          }while(j<arr[i].length);
+        i++; 
+        System.out.println();
+      }while(i<arr.length);
+	  
+	  
+	  
+12.Write a java program to Print elements from 3D array using for- 
+each loop.
+
+
+    int arr[][][]={{{1,2,3},{3,2,1}},{{4,5,6},{6,5,4}},{{7,8,9},{9,8,7}}};
+       for(int[][]tarr:arr) {
+           for(int []oarr:tarr){
+               for(int e:oarr){
+                   System.out.print(e+" ");
+               }
+           }
+           System.out.println();
+           }
+		   
+		   
+		   
+		   
+
+13.Find number of elements without using length variable. 
+  int arr[]={1,2,3,4,5};
+     
+      int c=0;
+      for(int a:arr){
+        c++;  
+      }
+      System.out.print(c);
+	  
+	  
+	  
+	
+14.Find sum of all elements present in an array. 
+
+
+ int arr[]={1,2,3,4,5};
+     int a=arr[0];
+     for(int i=1;i<arr.length;i++){
+         a=a+arr[i];
+       
+     }
+      System.out.print(a);
+	  
+15.Reverse elements in an array. 
+
+  int arr[]={1,2,3,4,5};
+     int a=arr.length;
+    for(int i=a-1;i>=0;i--){
+        System.out.print(arr[i]);
+    }
+   
+
+16.Find product of all elements present in an array. 
+
+
+    int arr[]={1,2,3,4,5};
+  int a=arr[0];
+    int arr[]={1,2,3,4,5};
+int a=arr[0];
+for(int i=0;i<arr.length;i++){
+    a=a*arr[i];
+}
+System.out.println(a);
+
+
+  
+17.Find all even elements present in an array.
+
+ int arr[]={2,3,4,5,6,7};
+      for(int i=0;i<arr.length;i++){
+          if(arr[i]%2==0){
+              System.out.print(arr[i]+" ");
+          }
+      }
+
+
+18.Find all odd elements present in an array. 
+
+    int arr[]={2,3,4,5,6,7};
+    for(int i:arr){
+        if(i%2!=0){
+            System.out.print(i+" ");
+        }
+    }
+
+19.Find all prime elements present in an array. 
+int arr[]={2,3,4,5,6,7};
+      List<Integer> list=findp(arr);
+   System.out.print(list+" ");
+   
+    }
+    public static List<Integer>findp(int[]arr){
+        List<Integer>primeList=new ArrayList<>();
+       for(int i:arr){
+           if(isprime(i)){
+               primeList.add(i);
+           }
+       }
+        
+       return primeList; 
+    }
+    public static boolean  isprime(int n){
+        if(n<2)return false;
+        for(int i=2;i<n;i++){
+            if(n%i==0){
+                return false;
+            }
+            
+        }
+        return true;
+        
+        
+        
+    }
+
+20.Find count of positive and negative elements present in an array.
+
+
+    int arr[]={2,3,4,5,-6,-7};
+      int p=0;
+      for(int i:arr){
+          if(i>0){
+              p++;
+          }
+      }
+      int n=0;
+      for(int i:arr){
+          if(i<0)n++;
+      }
+      System.out.println("positive no "+p);
+      System.out.println("negative no "+n);
+
+
+21.Find odd elements and store it in a new array.
+
+ int arr[]={2,3,4,5,6,7,1};
+       int c=0;
+      for(int i:arr){
+          if(i%2!=0)c++;
+      }
+       int narr[]=new int[c];
+       int index=0;
+       for(int i:arr){
+           if(i%2!=0)narr[index++]=i;
+       }
+       for(int i:narr){
+           System.out.print(i+" ");
+       }
+
+
+22.Find even elements and store it in a new array. 
+
+  int arr[]={2,3,4,5,6,7,1};
+     int c=0;
+     for(int i:arr){
+         if(i%2==0)c++;
+     }
+    int index=0;
+    int narr[]=new int[c];
+    for(int i:arr){
+        if(i%2==0){
+            narr[index++]=i;
+        }
+    }
+    for(int i:narr){
+      System.out.println(i);  
+    }
+	
+	
+23.Find first 10 prime numbers and store it in an array. 
+	   
+
+ int []p=new int[10];
+       int c =0;
+       int num=2;
+       while(c<10){
+           if(isprime(num)){
+               p[c]=num; 
+               c++;
+           }
+           num++;
+       }
+
+    for(int i:p){
+        System.out.print(i+" ");
+    }
+    }
+      public static boolean isprime(int num){
+        if(num<2)return false;
+        for(int i=2;i<num;i++){
+            if(num%i==0)return false;
+        }
+        return  true;
+    }
+
+
+25.Find first 10 Fibonacci numbers and store it in an array. 
+
+int a=0,b=1,c;
+      int s=0;
+      int e=10;
+      int arr[]=new int[e];
+      for(int i=s;i<e;i++){
+        arr[i]=a;// add the value of the a is add into the a 
+          c=a+b;
+          b=a;
+          a=c;
+      }
+      for(int i:arr){
+          System.out.print(i+" ");
+      }
+
+
+	
+26.Find sum of all elements at even indices in an array. 
+
+int arr[]={2,3,4,5,6,12,34,45};
+     int s=0;
+     for(int i=0;i<arr.length;i+=2){
+     s=s+arr[i];
+     }
+     System.out.print(s);
+
+
+27.Find sum of all elements at odd indices in an array. 
+
+ int arr[]={2,3,4,5,6,7,8};
+    int s=0;
+    for(int i=1;i<arr.length;i+=2){
+      s=s+arr[i];
+    }
+  System.out.print(s);
+  
+  
+ 
+28.Merge two 1D arrays.
+  int arr[]={2,3,4,5,6,7,8};
+  int arr1[]={10,20,30,40};
+  int a=arr.length;
+  int b=arr1.length;
+  int r[]=new int[a+b];
+  int index=0;
+  for(int i=0;i<arr.length;i++){
+      r[index++]=arr[i];
+  }
+  for(int i=0;i<arr1.length;i++){
+      r[index++]=arr1[i];
+  }
+for(int i:r){
+    System.out.print(i+" ");
+}
+
+29.Merge three 1D arrays
+
+
+    int arr[]={2,3,4,5,6,7,8};
+  int arr1[]={10,20,30,40};
+  int arr2[]={100,200,300};
+  int a=arr.length;
+  int b=arr1.length;
+  int c=arr2.length;
+  int r[]=new int[a+b+c];
+  int index=0;
+  for(int i=0;i<arr.length;i++){
+      r[index++]=arr[i];
+  }
+  for(int i=0;i<arr1.length;i++){
+      r[index++]=arr1[i];
+  }
+  for(int i=0;i<arr2.length;i++){
+      r[index++]=arr2[i];
+  }
+  
+for(int i:r){
+    System.out.print(i+" ");
+}
+
+
+ 30. Merge elements of a 2D array.
+ 
+ 
+	 int arr[][]={{1,2,3},{4,5,6}};
+       int s=0;
+       for(int []arr1:arr){
+           s+=arr1.length;
+       }
+       int mArray[]=new int[s];
+       int i=0;
+       for(int [] row : arr){
+           for(int e:row){
+               mArray[i++]=e;
+           }
+       }
+           for(int p:mArray){
+               System.out.print(p+" ");
+           } 
+
+
+
+31.Find factors of a number and store them in an array. 
+
+     int a=12;
+   int c=0;
+     for(int i=1;i<=a;i++){
+         if(a%i==0){
+            c++;
+         }
+     }
+      
+      int arr[]=new int[c];
+      int index=0;
+      for(int i=1;i<=a;i++){
+          if(a%i==0){
+             arr[index++]=i; 
+          }
+      }
+       
+       for(int i:arr){
+           System.out.print(i+" ");
+       }
+	   
+	   
+	   
+	   
+32.Create a clone of 1D array without using clone()
+
+	 int arr[]={1,2,3,4,5,6};
+        int narr[]=new int[arr.length];
+        for(int i=0;i<arr.length;i++){
+            narr[i]=arr[i];
+        }
+        
+        for(int i:narr){
+            System.out.print(i+" ");
+        }   
+
+
+33.Create a clone of 2D array without using clone(). 
+
+int arr[][]={{1,2,3},{4,5,6}};
+      int narr[][]=new int[arr.length][];
+      
+    for(int i=0;i<arr.length;i++){
+        narr[i]=new int[arr[i].length];
+        for(int j=0;j<arr[i].length;j++){
+            narr[i][j]=arr[i][j];
+        }
+    }
+    for(int r[]:narr){
+        for(int i:r){
+            System.out.print(i+" ");
+        }
+        System.out.println();
+    }
+	
+	
+	
+34.Create a clone of 3D array without using clone(). 
+
+ int arr[][][]={
+          {
+              {1,2},
+              {3,4}}
+      ,{
+          {5,6},
+          {7,8}
+      }
+      };
+      
+      
+      int narr[][][]=new int[arr.length][][];
+      for(int i=0;i<arr.length;i++){
+          narr[i]=new int[arr[i].length][];
+          for(int j=0;j<arr[i].length;j++){
+              narr[i][j]=new int[arr[i][j].length];
+              for(int k=0;k<arr[i][j].length;k++){
+                  narr[i][j][k]=arr[i][j][k];              }
+          }
+      }
+      
+      
+      for(int r[][]:narr){
+          for(int i[]:r){
+              for(int k:i){
+                  System.out.print(k+" ");
+              }
+              System.out.println();
+          }
+          System.out.println();
+      }
+     
+	 
+	 
+	 
+35.Perform Zig Zag merging of arrays.  
+
+ int a[]={1,3,5,7,9};
+ int b[]={2,4,6,8,10};
+ int l1=a.length;
+ int l2=b.length;
+int m[]=new int[l1+l2];
+int i=0;int j=0;int k=0;
+while(i<l1 && j<l2){
+    m[k++]=a[i++];
+    m[k++]=b[j++];
+}
+while(i<l1){
+    m[k++]=a[i++];
+    
+}
+while(j<l2){
+    m[k++]=b[j++];
+}
+
+for(int p:m){
+    System.out.print(p+" ");
+}
+  
+  
+  
+ 36.find the smallest element into the array
+ 
+        int arr[]={14,3,45,32,12,4};
+       
+      // 1st method
+     int a=arr[0];
+     for(int i=0;i<arr.length;i++){
+         if(a>arr[i]){
+            a=arr[i];
+         }
+     }
+       System.out.println("method 1st ");
+    System.out.println(a);
+   
+   //method 2nd
+   Arrays.sort(arr);
+     System.out.println("method 2nd ");
+  System.out.println(arr[0]);
+  
+  
+  //method 3rd
+  
+  int t=0;
+  for(int i=0;i<arr.length;i++){
+      for(int j=i+1;j<arr.length;j++){
+          if(arr[i]>arr[j]){
+              t=arr[i];
+              arr[i]=arr[j];
+              arr[j]=t;
+          }
+      }
+
+  }
+  System.out.println("method 3rd ");
+        System.out.println(arr[0]);
+
+
+
+
+37.find the largest element into the array
+
+ int arr[]={14,3,45,32,12,4};
+       
+      Arrays.sort(arr);
+      System.out.println("method 1st");
+      System.out.println(arr[arr.length-1]);
+      
+      
+      
+      System.out.println("method 2nd");
+      
+      int m=arr[0];
+      for(int i=0;i<arr.length;i++){
+          for(int j=i+1;j<arr.length;j++){
+              if(m<arr[i]){
+                  m=arr[i];
+              }
+          }
+      }
+      System.out.println(m);
+    
+         
+      System.out.println("method 3rd");
+      int t=0;
+      for(int i=0;i<arr.length;i++){
+          for(int j=i+1;j<arr.length;j++){
+              if(arr[j]<arr[i]){
+                  t=arr[i];
+              arr[i]=arr[j];
+              arr[j]=t;
+              }
+          }
+          
+         
+      }
+       System.out.println(arr[arr.length-1]);
+      
+	  
+	  
+	  
+38. largest and smallest element into the array
+  
+
+    int arr[]={14,3,45,32,12,4};
+       
+  int max=arr[0];
+  int min=arr[0];
+  for(int i=0;i<arr.length;i++){
+      for(int j=i+1;j<arr.length;j++){
+          if(max<arr[i]){
+              max=arr[i];
+          }
+          else if(min > arr[i]){
+              min=arr[i];
+              
+          }
+         
+      }
+  }
+    
+    System.out.print(max+ " "+min);
+	
+	
+	
+39.sum of all element into the array 
+
+
+       int arr[]={14,3,45,32,12,4};
+ int s=0;
+ for(int i:arr){
+     s=s+i;
+ }
+ System.out.print(s);
+ 
+ 
+ 
+ 
+ 40.reversing the array element
+ 
+ 
+       int arr[]={14,3,45,32,12,4};
+for(int i=arr.length-1;i>=0;i--){
+    System.out.print(arr[i]+" ");
+	
+	
+	
+41.  first half in Ascending order and second half in Descending order
+
+
+      int a[]={12,30,50,10,13,80};
+       int l=a.length;
+       int t=0;
+    
+         
+         
+     for(int i=0;i<l;i++){
+         for(int j=i+1;j<l/2;j++){
+            if(a[i]<a[j]){
+                 t=a[i];
+             a[i]=a[j];
+             a[j]=t;
+            }
+         }
+         
+         for(int j=l/2;j<l-1;j++){
+             if(a[i]>a[j]){
+                 t=a[i];
+                 a[i]=a[j];
+                 a[j]=t;
+             }
+         }
+         
+         
+     }
+     
+     
+     for(int i=0;i<l;i++){
+         System.out.print(a[i]+" ");
+     }
+	 
+	 
+	 
+42.Sorting Elements In An Array
+
+int a[]={12,30,50,10,13,80};
+       int l=a.length;
+       int t=0;
+       System.out.println("inbuilt  method ");
+      Arrays.sort(a);
+      
+       for(int i: a){
+       System.out.println(i+" ");
+   }
+      System.out.println("method not use inbuilt ");
+      for(int i=0;i<l;i++){
+          for(int j=i+1;j<l;j++){
+              if(a[i]>a[j]){
+                  t=a[i];
+                  a[i]=a[j];
+                  a[j]=t;
+              }
+          }
+      }
+      
+    
+         
+   
+   for(int i: a){
+       System.out.println(i+" ");
+   }
+
+
+
+43.display the duplicates element into the array 
+
+  int a[]={10,30,20,50,60,60,30,20,10,8,9,7};
+ 
+      for(int i=0;i<a.length;i++){
+          for(int j=i+1;j<a.length;j++){
+              if(a[i]==a[j]){
+               
+                  System.out.println(a[i]);
+              }
+          }
+      }
+
+
+44.	remove duplicate element
+
+
+  int arr[]={1,2,3,3,4,2,5};
+        HashSet<Integer> set=new HashSet<>();
+		// set can not allows duplicate values
+		
+        for(int num: arr){
+            set.add(num);
+        }
+        System.out.print(set);
+
+
+45. find duplicate into the 2 arrays 
+
+ int arr[]={1,2,3,6};
+        int arr1[]={5,3,2};
+        HashSet <Integer> set=new HashSet<Integer>();
+        for(int i:arr){
+            set.add(i);
+        }
+     for(int i:arr1){
+         if(set.contains(i)){
+		 // contains is check the any element is present or not into the set 
+		 // and if the present into the set it returns the true
+		 
+             System.out.print(i+" ");
+         }
+     }
+
+
+
+
+46. find the count of duplicate element into the array 
+
+int arr[]={2,4,5,3,6,7,5,6,7};
+      
+      int f[]=new int [arr.length];
+      int v=-1;
+      for(int i=0;i<arr.length;i++){
+          int c=1;
+          for(int j=i+1;j<arr.length;j++){
+              if(arr[i]==arr[j]){
+                  c++;
+                  f[j]=v;
+              }
+          }
+          if(f[i]!=v){
+              f[i]=c;
+          }
+          
+      }
+      
+      for(int i=0;i<f.length;i++){
+          if(f[i]!=v){
+              System.out.println(arr[i]+" "+f[i]);
+          }
+      }
+
+
+47 Find all the non-repeating elements in an array
+
+ int arr[]={2,3,4,2,5,4,6,7,5,8};
+      int f[]=new int[arr.length];
+      int v=-1;
+      for(int i=0;i<arr.length;i++){
+          int c=1;
+          for(int j=i+1;j<arr.length;j++){
+              if(arr[i]==arr[j]){
+                  c++;
+                  f[j]=v;
+              }
+          }
+          
+          if(f[i]!=v){
+              f[i]=c;
+          }
+      }
+      for(int i=0;i<f.length;i++){
+          if(f[i]!=v){
+              if(f[i]==1){
+                  System.out.println(arr[i]+" "+f[i]);
+              }              
+          }
+      }	  
+		
+ 
+ 
+48.Sorting elements of an array by frequency
+
+int[] a = { 20, 30, 20, 40, 60, 40, 80, 90, 80};
+        int[] f = new int[a.length];
+        int v = -1;
+
+        // Step 1: Calculate frequency of each element
+        for (int i = 0; i < a.length; i++) {
+            int c = 1;
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] == a[j]) {
+                    c++;
+                    f[j] = v; // Mark this index as visited
+                }
+            }
+            if (f[i] != v) {
+                f[i] = c;
+            }
+        }
+
+        // Step 2: Store elements and their frequencies in a list
+        List<int[]> flist = new ArrayList<>();
+        for (int i = 0; i < f.length; i++) {
+            if (f[i] != v) {
+                flist.add(new int[]{a[i], f[i]});
+            }
+        }
+
+        // Step 3: Sort the list by frequency in descending order
+        Collections.sort(flist, new Comparator<int[]>() {
+            public int compare(int[] o1, int[] o2) {
+                return Integer.compare(o2[1], o1[1]); // Sort by frequency descending
+            }
+        });
+
+        // Step 4: Print the elements based on their frequency
+        for (int[] freq : flist) {
+            for (int i = 0; i < freq[1]; i++) {
+                System.out.print(freq[0] + " ");
+            }
+        }
+		
+49. Longest palindrome in an array
+
+import java.util.*;
+class Main {
+    
+    public static boolean ispalindrome(int n){
+        int rem,num,rev=0;
+        num=n;
+        while(n!=0){
+            rem=n%10;
+            rev=rev*10+rem;
+            n=n/10;
+        }
+        return num==rev;
+    }
+    
+    public static int largestpalindrome(int a[],int n){
+       Arrays.sort(a);
+       
+       for(int i=n-1;i>=0;i--){
+           if(ispalindrome(a[i])){
+               return a[i];
+           }
+       }
+       return  -1;
+       
+        
+    }
+    public static void main(String[] args) {
+             int[] a = {123, 454, 789, 121, 99899, 34543, 11111};
+             int s=a.length;
+             int largestp=largestpalindrome(a,s);
+             
+             if(largestp ==-1){
+                 System.out.println("no");
+             }else{
+                 System.out.println("yes -: "+ largestp);
+             }
+             
+             
+             
+    }
+}	
+
+
+
+50. Find all Symmetric pairs in an array
+
+//
+ //(1,2),(3,4)(5,1)(4,3),(1,5)
+ 
+       int a[][]=new int[5][2];
+      a[0][1]=1;
+      a[0][1]=2;
+      a[1][0]=3;
+      a[1][1]=4;
+      a[2][0]=5;
+      a[2][1]=1;
+      a[3][0]=4;
+      a[3][1]=3;
+      a[4][0]=1;
+      a[4][1]=5;
+	  
+	  or
+	   //(1,2),(3,4),(5,3),(4,3),(2,1)
+ int a[][]={{1,2},{3,4},{5,3},{4,3},{2,1}};
+ 
+      
+      for(int i=0;i<5;i++){
+          for(int j=i+1;j<5;j++){
+              if(a[i][0]==a[j][1]&& a[i][1]==a[j][0]){
+                  System.out.println("("+a[i][0]+","+a[i][1]+")");
+              }
+          }
+      }
+	  }
+	  
+	  
+	 
+
+
+51. rotet the array from the k position
+
+	import java.util.*;
+class Main {
+    
+    public static void reverse(int a[],int s, int e){
+        while(s<e){
+            int t=a[s];
+            a[s]=a[e];
+            a[e]=t;
+            s++;
+            e--;
+        }
+        
+    }
+    public static void rotate(int a[],int k){
+        int n=a.length;
+        reverse(a,0,k-1);
+        reverse(a,k,n-1);
+        reverse(a,0,n-1);
+    }
+    
+    public static void main(String[] args) {
+       int arr[]={1,2,3,4,5,6,7,8};
+       int k=3;
+         for(int i:arr){
+           System.out.print(i+ " ");
+       }
+       System.out.println();
+       rotate(arr,k);
+       for(int i:arr){
+           System.out.print(i+ " ");
+       }
+    }
+}
+
+
+ ----------------OR---------------------
+input from user
+
+import java.util.*;
+class HelloWorld {
+    public static void  reverse(int []a,int s,int e){
+        while(s<e){
+            int t=a[s];
+            a[s]=a[e];
+            a[e]=t;
+            s++;
+            e--;
+        }
+    }
+    
+    
+    public static void rotate(int []a,int k){
+        int n=a.length;
+        k=k%n;
+        reverse(a,0,k-1);
+        reverse(a,k,n-1);
+        reverse(a,0,n-1);
+    }"
+    public static void main(String[] args) {
+       
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of array");
+        int s=sc.nextInt();
+        int arr[]=new int[s];
+        System.out.println(" enter element of array");
+        for(int i=0;i<s;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("enter the position you want rotate this array");
+        
+        int k=sc.nextInt();
+        if(k<=s){
+          rotate(arr,k);
+        System.out.println("after rotation array");
+        for(int i=0;i<arr.length;i++){
+            System.out.println(i+" "+arr[i]+" ");
+        }  
+        }
+        else{
+            System.out.println("enter valid position");
+        }
+        
+        
+    }
+}
+
+
+52.Given an array, we have to find the average of all the elements in the array.
+
+    int arr[]={3,4,6,7,8,9};
+      int s=arr.length;
+      double sum=0;
+      for(int i=0;i<s;i++){
+          sum=sum+(double)arr[i];
+      }
+      
+      double avg=sum/s;
+      System.out.println("avg "+avg);
+	  
+	  
+
+53. Given an unsorted array, find the median of the given array.
+
+ int a[]={4,2,5,6,1,9};
+         //1,2,4,5,6,9
+        // Arrays.sort(a);
+         //or
+         for(int i=0;i<a.length;i++){
+             for(int j=i+1;j<a.length;j++){
+                 if(a[i]>a[j]){
+                     int t=a[i];
+                     a[i]=a[j];
+                     a[j]=t;
+                 }
+             }
+         }
+         for(int i:a){
+             System.out.print(i+" ");
+         }
+         
+         if(a.length%2!=0){
+             int idx=a.length/2;
+             System.out.println("median "+a[idx]);
+         }
+         else{
+             int idx=a.length/2;
+             double md=(double)(a[idx]+a[idx-1])/2;
+             System.out.println(md);
+         }
+         
+         
+
+
+54. insert element into the array:---
+first /last/postion 
+
+
+import java.util.*;
+class Main {
+  public static void  isertfirst(int a[],int n ,int v){
+        for(int i=n-1;i>=0;i--){
+            a[i+1]=a[i];
+        }
+        a[0]=v;
+    }
+    
+  public  static void insertatEnd(int[] arr, int n, int value)
+{
+    arr[n] = value;
+}
+static void insertatposition(int[] arr, int n, int value, int pos)
+{
+    for (int i = n; i >= pos; i--)
+    {
+        arr[i] = arr[i - 1];
+    }
+    arr[pos - 1] = value;
+}
+
+    
+    public static void main(String[] args) {
+       int a[]={12,20,8,30,4,60,5,90,10};
+       int n=a.length-1;
+       int v=40;
+       int p=6;
+       System.out.println(" before adding into the first ");
+       for(int arr:a){
+           System.out.print(arr+" ");
+       }
+       isertfirst(a,n,v);
+       System.out.println();
+           System.out.println(" after adding into the first ");
+       for(int arr:a){
+           System.out.print(arr+" ");
+       }
+       insertatEnd(a,n,v);
+       
+       System.out.println();
+           System.out.println(" after adding into the last ");
+       for(int arr:a){
+           System.out.print(arr+" ");
+       }
+       
+       
+       insertatposition(a,n,v,p);
+       System.out.println();
+           System.out.println(" adding into the possition ");
+       for(int arr:a){
+           System.out.print(arr+" ");
+       }
+      
+}
+    
+}
+
+
+
+55.Search an element in an array and return its position
+
+   int arr[] = {6,7,9,5,3,10};
+    int n = arr.length;
+    int k = 10;
+    int ans = -1;
+    for (int i = 0; i < n; i++) {
+      if (arr[i] == k) {
+        ans = i;
+        break;
+      }
+    }
+    System.out.print("The element is present in "+ans+" index");
+  }
+}
+
+
+--------------OR---------------------
+
+
+when duplicate element are present
+
+int arr[] = {6, 7, 9, 5, 3, 10, 6, 7, 5};  // 
+int k=3;
+LinkedHashSet<Integer> set=new LinkedHashSet<>();
+// for remove the duplicates and order maintains
+
+for(int n:arr){
+    set.add(n);
+}
+System.out.print(set+" ");
+  // Convert LinkedHashSet to a list to access indices
+  System.out.println();
+List<Integer> list=new ArrayList<>(set);
+int id=list.indexOf(k);
+if(id !=-1){
+    
+    // index is start from 0 so id!=-1 condition gives 
+    
+    System.out.print("The element "+k+" is present at index: "+id);
+}
+else{
+    System.out.print("The element "+k+ " not present in array");
+}
+
+
+56. array into the arraylist
+
+ String[] sarray={"abhi","ram","sham"};
+      List<String>list=new ArrayList<>(Arrays.asList(sarray));
+     // Converts the array to a fixed-size list.
+      list.add("ekal");
+      System.out.print(list);
+	  
+	  
+----------------OR---------------------
+	  
+	  
+	   List<String>list=new ArrayList<>();
+      for(String s:sarray){
+          list.add(s);
+      }
+      list.add("ekal");
+      System.out.print(list);
+	  
+	  
+-------------OR-------------------
+
+String arr[]={"abhi","ram","sham"};
+
+ArrayList<String>arraylist=new ArrayList<>();
+// Using Collections.addAll() method
+Collections.addAll(arraylist,arr);
+System.out.println(arraylist);
+
+
+
+57.Write a java program to convert a string into char array. 
+
+String str="java is a language";
+int s=str.length();
+char astr[]=new char[s];
+for(int i=0;i<s;i++){
+    astr[i]=str.charAt(i);
+}
+for(char p:astr){
+    System.out.print(p+" ");
+}
+
+-----------OR-------------------
+
+String str="java is a language";
+      // Convert the string to a char array
+char astr[]=str.toCharArray();
+for(char c:astr){
+    System.out.print(c+ " ");
+}
+
+
+58.Write a java program to create a subarray from an array. 
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+       int arr[]={1,2,3,4,5,6,7,8};
+       int s=2;
+       int e=5;
+    //   System.out.print(arr[3]+ " "+arr[6]);
+       int l=e-s;
+       int subarray[]=new int [l];
+       for(int i=0;i<l;i++){
+           subarray[i]=arr[s+i];
+       }
+       for(int p: subarray){
+           System.out.print(p+" ");
+       }
+    }
+}	  
+
+
+
+59.Write a java program to store user elements in an array and tak 
+length from user.
+
+
+Scanner sc=new Scanner(System.in);
+    System.out.println(" enter size of array");
+    int l=sc.nextInt();
+    int arr[]=new int[l];
+    System.out.println("enter Element into the array ");
+    
+    for(int i=0;i<arr.length;i++){
+        arr[i]=sc.nextInt();
+    }
+    
+    for(int i:arr){
+        System.out.print(i+" ");
+    }
+	
+	
+	
+
+60.  Write a java program to Rotate an array ‘k’ times forward.(left- 
+rotate) 
+
+
+import java.util.*;
+class Main {
+    
+    public static void reverse(int a[],int s ,int e){
+        while(s<e){
+            int t=a[s];
+            a[s]=a[e];
+            a[e]=t;
+            s++;
+            e--;
+        }
+    }
+    public static void rotate(int a[],int k
+){
+    int n=a.length;
+    reverse(a,0,k-1);
+    reverse(a,k,n-1);
+    reverse(a,0,n-1);
+}    
+    public static void main(String[] args) {
+   
+   int arr[]={1,2,3,4,5};
+   int k=2;
+   for(int i:arr){
+       System.out.print(i+ " ");
+       
+   }
+   System.out.println();
+   rotate(arr,k);
+   for(int i:arr){
+       System.out.print(i+" ");
+   }
+   
+   
+    }
+}
+
+
+
+
+61. Write a java program to Rotate an array ‘k’ times forward.(left- 
+rotate)
+
+-> Small change into the rotate method 
+import java.util.*;
+class Main {
+    
+    public static void reverse(int a[],int s ,int e){
+        while(s<e){
+            int t=a[s];
+            a[s]=a[e];
+            a[e]=t;
+            s++;
+            e--;
+        }
+    }
+    public static void rotate(int a[],int k
+){
+    int n=a.length;
+    // k=k%n;
+
+    // Reverse the entire array
+        reverse(a, 0, n - 1);
+        // Reverse the first 'k' elements
+        reverse(a, 0, k - 1);
+        // Reverse the remaining 'n-k' elements
+        reverse(a, k, n - 1);
+    
+   
+    
+}    
+    public static void main(String[] args) {
+   
+   int arr[]={1,2,3,4,5};
+   int k=2;
+   for(int i:arr){
+       System.out.print(i+ " ");
+       
+   }
+   System.out.println();
+   rotate(arr,k);
+   for(int i:arr){
+       System.out.print(i+" ");
+   }
+   
+   
+    }
+} 
+
+
+62. Write a java program to check if 2 arrays are equal or not.
+
+
+import java.util.*;
+class Main {
+    public static boolean arraye(int a[],int b[]){
+        if(a.length!=b.length){
+            return false;
+            
+        }
+        for(int i=0;i<a.length;i++){
+            if(a[i]!=b[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,5,6};
+        int narr[]={1,2,3,4,5,6};
+        
+        boolean r=arraye(arr,narr);
+        if(r){
+            System.out.println("The  arrays are equal ");
+            
+        }
+        else{
+            System.out.print("The arrays are not equal ");
+        }
+    }
+}
+
+
+
+----------------OR-------------------
+
+   int arr[]={1,2,3,4,5,6};
+        int narr[]={1,2,3,4,5,6};
+        
+    if(Arrays.equals(arr,narr)){
+        System.out.println("The arrays are equal ");
+    }
+    else{
+        System.out.println("The arrays are not equal ");
+    }
+	
+	
+	
+	
+	
+63. Write a java program to find largest element from an array  without using sorting method. 
+
+ int arr[]={12,2,45,6,76,89,54};
+     int a=arr[0];
+     for(int i=0;i<arr.length;i++){
+         if(arr[i]>a){
+         a=arr[i];
+         }
+     }
+    System.out.print(a);
+	
+	
+	
+
+64. Write a java program to find smallest element from an array 
+without using sorting method. 
+
+
+
+  int arr[]={12,2,45,6,76,89,54};
+     int a=arr[0];
+     for(int i=0;i<arr.length;i++){
+         if(arr[i]<a){
+         a=arr[i];
+         }
+     }
+    System.out.print(a);
+	
+	
+	
+
+65. Write a java program to find the Second Largest element from 
+an array using sorting. 
+
+ int arr[]={12,13,14,15,16,17};
+       // by using the inbulid method sort
+       
+      Arrays.sort(arr);
+    System.out.println(arr[arr.length-2]);
+   
+   // not use the inbuilt  method
+   
+   for(int i=0;i<arr.length;i++){
+       for(int j=i+1;j<arr.length;j++){
+           if(arr[i]>arr[j]){
+                int t=arr[i];
+           arr[i]=arr[j];
+           arr[j]=t;
+           }
+          
+       }
+   }
+   
+   System.out.println(arr[arr.length-2]);
+   
+ 
+
+66. Write a java program to find the Third Largest element from an array using sorting.  
+		
+->  only condition get change it
+
+System.out.println(arr[arr.length-3]);
+
+67. Write a java program to find the Third Smallest element from an array using sorting. 
+	
+	
+	   int arr[]={12,13,14,15,16,17};
+      //use inbulid method for the sorting the array 
+	  
+      Arrays.sort(arr);
+      System.out.print(arr[2]);
+	  
+// 2nd way 
+
+      System.out.println();
+    for(int i=0;i<arr.length;i++){
+        for(int j=i+1;j<arr.length;j++){
+            if(arr[i]<arr[j]){
+                int t=arr[i];
+                arr[i]=arr[j];
+                arr[j]=t;
+            }
+        }
+    }
+    //for(int i:arr){
+    //    System.out.print(i+" ");
+    //}
+    System.out.println();
+    System.out.print(arr[arr.length-3]);
+   
+	
+	
+
+68.  Write a java program to find the Second Smallest element from 
+an array using sorting.
+
+
+   int arr[]={12,13,14,15,16,17};
+      
+      Arrays.sort(arr);
+      System.out.print(arr[1]);
+    
+      System.out.println();
+    for(int i=0;i<arr.length;i++){
+        for(int j=i+1;j<arr.length;j++){
+            if(arr[i]<arr[j]){
+                int t=arr[i];
+                arr[i]=arr[j];
+                arr[j]=t;
+            }
+        }
+    }
+	
+    // for(int i:arr){
+    //     System.out.print(i+" ");
+    // }
+	
+    System.out.println();
+    System.out.print(arr[arr.length-2]);
+	
+	
+	
+69.  In the assembly line, the factor assembles three parts ‘a’, ‘b’, ‘c’ 
+of a triangle toy. A valid toy is one where the two shorter sides 
+added together are greater in length than the longest side. - There are two forms of valid triangles to identify. 
+1. if 2 parts are of equal length ,the form is ‘isosceles’. 
+2. if all 3 parts are of equal length, the form is ‘Equilateral’. 
+Input: 36 36 30, output: Isosceles 
+Input: 47 8 60, output: None of these 
+Input: 86 86 86, output: Equilateral
+
+	
+	
+
+import java.util.*;
+
+class Main {
+    public static void findtriangle(int a,int b, int c){
+        if(a+b>c && a+c > b && b + c > a){
+            if(a==b && b==c){
+                System.out.println(" Equilateral ");
+            }else if(a==b||b==c||a==c){
+                System.out.println("isosceles");
+            }else{
+                System.out.println("none of these ");
+            }
+        }else{
+                System.out.println("none of these ");
+            }
+    }
+    public static void main(String[] args) {
+        
+        findtriangle(36,36,30);
+        findtriangle(86,86,86);
+        findtriangle(47,8,30);
+    }
+}
+
+
+
+
+70.  In a household, a family keeps tracks of their monthly expenses 
+using matrix of size NXN, with each row representing different 
+month, and each column representing an expense category. 
+They want your help in determining the month with the highest 
+expenses using a program. 
+The program must print all expenses of the month that has the 
+highest total expenditure. If more than one month has the same 
+highest sum then print the expenditure of the month that occurs 
+first. 
+Input: N=3 
+1 2 3 
+4 5 6 
+7 8 9 
+Output: 7 8 9
+
+
+
+Explanation: The sum of expenditure amount for 1st month is: 
+1+2+3=6 
+The sum of expenditure amount for 2nd month is: 4+5+6=15 
+The sum of expenditure amount for 3rdmonth is: 7+8+9=24 
+Among all three months, the 3rd month has the highest expenses. 
+So, expenditure amounts are 7, 8, 9 will be printed as output.  
+
+
+
+
+
+    Scanner sc=new Scanner(System.in);
+     System.out.println("Enter size of matrix");
+     int N=sc.nextInt();
+     int [][]m=new int[N][N];
+     System.out.println("Enter the elements row by row  ");
+     
+     for(int i=0;i<N;i++){
+         for(int j=0;j<N;j++){
+             m[i][j]=sc.nextInt();
+         }
+     }
+     
+     int max=0;
+     int mindex=0;
+     for(int i=0;i<N;i++){
+         int csum=0;
+         for(int j=0;j<N;j++){
+             csum+=m[i][j];
+         }
+         if(csum>max){
+             max=csum;
+             mindex=i;
+         
+     }
+     }
+     
+     System.out.print(" higth month of expenses");
+     
+     for(int i=0;i<N;i++){
+         System.out.print(m[mindex][i]+" ");
+     }
+	 
+	 
+	 
+	 
+
+
+71.A stock trader trades in N selected stocks. The trader has 
+calculated the relative stock price changes in the N stocks from the 
+previous day stock prices. The lucky number of the trader is K, so 
+the trader wishes to invest in the particular stock that has the kth 
+smallest relative stock value. 
+Input: arr[]={10,5,7,88,19}, k=3 
+Output: 1  
+
+
+
+
+int arr[]={10,5,7,88,19};
+ int k=3;
+ int []sortedArr=arr.clone();
+ Arrays.sort(sortedArr);
+ 
+ int kth=sortedArr[k-1];
+ int index=-1;
+ for(int i=0;i<arr.length;i++){
+     if(arr[i]==kth){
+         index=i+1;
+         break;
+     }
+ }
+ System.out.print(index);
+      
+	
+	
+	
+	
+72.  Given an integer array nums, return an array answer such that 
+answer[i] is equal to the product of all the elements of nums except 
+nums[i]. 
+Ip : nums={1, 2, 3, 4} 
+Op :answer={24,12,8,6}
+
+
+import java.util.*;
+class Main {
+    
+    
+public static int[]productExceptself(int[] nums){
+    int n=nums.length;
+    int [] answer=new int[n];
+    int p=1;
+    for(int i=0;i<n;i++){
+        answer[i]=p;
+        p=p*nums[i];
+    }
+    p=1;
+    for(int i=n-1;i>=0;i--){
+        answer[i]=answer[i]*p;
+        p=p*nums[i];
+    }
+    return  answer;
+}
+    public static void main(String[] args) {
+int []nums={1,2,3,4};
+int []answer=productExceptself(nums);
+for(int num:answer){
+    System.out.print(num+" ");
+    
+}
+
+        
+    }
+}
+
+
+
+Even Odd Sorting
+Implement Odd-Even sort /Brick sort.
+
+.
+
+import java.util.Scanner;
+
+public class SimpleOddEvenSort {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Number of elements
+        int n = scanner.nextInt();
+
+        // Input: Array elements
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        // Perform Odd-Even Sort
+        boolean sorted = false;
+        while (!sorted) {
+            sorted = true;
+
+            // Odd phase
+            for (int i = 1; i < n - 1; i += 2) {
+                if (arr[i] > arr[i + 1]) {
+                    // Swap
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    sorted = false;
+                }
+            }
+
+            // Even phase
+            for (int i = 0; i < n - 1; i += 2) {
+                if (arr[i] > arr[i + 1]) {
+                    // Swap
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    sorted = false;
+                }
+            }
+        }
+
+        // Output: Sorted array
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+
+        scanner.close();
+    }
+}
+
+
+Swip The 2 no into the array 
+
+
+      Scanner s= new Scanner(System.in);
+  System.out.print( " enter input");
+ 
+   int a[] = new  int[2];
+    for( int i=0;i<a.length;i++){
+	a[i]=s.nextInt();
+	}
+	
+	 int t= a[0];
+	 a[0]= a[1];
+	 a[1]=t;
+	  for( int f: a){
+	   System.out.print(f+" ");
+	   }
+	   
+	   
+
+  90 degree rotation 
+	   
+	   
+	   public class RotateMatrix {
+    public static void rotate90Degree(int[][] matrix) {
+        int n = matrix.length;
+
+        // Step 1: Transpose the matrix
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
+            }
+        }
+
+        // Step 2: Reverse each row
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n / 2; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[i][n - 1 - j];
+                matrix[i][n - 1 - j] = temp;
+            }
+        }
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int num : row) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        System.out.println("Original Array:");
+        printMatrix(matrix);
+
+        rotate90Degree(matrix);
+
+        System.out.println("\n90 Degree Rotated Array:");
+        printMatrix(matrix);
+    }
+} 
+
+
+	
+	
+	prime no code 
+
+
+import java.util.*;
+class Main {
+    public static boolean isprime(int n){
+        if(n<=1) return false;
+        for( int i=2;i<n;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+         int c=0,n=2;
+         while(c<100){
+             if(isprime(n)){
+                 System.out.println(n+" ");
+                 c++;
+             }
+             n++;
+         }
+    }
+}
+
+
+
+	
+	
+ 
+
+
+
+// 1. Find the Smallest Number in an Array - Different Ways
+
+
+
+// Method 1: Using Linear Search
+
+public class SmallestNumberLinear {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19};
+
+        int min = arr[0];
+
+        for (int num : arr) {
+
+            if (num < min) {
+
+                min = num;
+
+            }
+
+        }
+
+        System.out.println("Smallest number is: " + min);
+
+    }
+
+}
+
+
+
+// Method 2: Using Arrays.sort()
+
+import java.util.Arrays;
+
+
+
+public class SmallestNumberSort {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19};
+
+        Arrays.sort(arr);
+
+        System.out.println("Smallest number is: " + arr[0]);
+
+    }
+
+}
+
+
+
+// Method 3: Using Java 8 Streams
+
+import java.util.*;
+
+import java.util.stream.*;
+
+
+
+public class SmallestNumberStream {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19};
+
+        int min = Arrays.stream(arr).min().getAsInt();
+
+        System.out.println("Smallest number is: " + min);
+
+    }
+
+}
+
+
+
+// 2. Find the Largest Number in an Array - Different Ways
+
+
+
+// Method 1: Using Linear Search
+
+public class LargestNumberLinear {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19};
+
+        int max = arr[0];
+
+        for (int num : arr) {
+
+            if (num > max) {
+
+                max = num;
+
+            }
+
+        }
+
+        System.out.println("Largest number is: " + max);
+
+    }
+
+}
+
+
+
+// Method 2: Using Arrays.sort()
+
+public class LargestNumberSort {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19};
+
+        Arrays.sort(arr);
+
+        System.out.println("Largest number is: " + arr[arr.length - 1]);
+
+    }
+
+}
+
+
+
+// Method 3: Using Java 8 Streams
+
+public class LargestNumberStream {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19};
+
+        int max = Arrays.stream(arr).max().getAsInt();
+
+        System.out.println("Largest number is: " + max);
+
+    }
+
+}
+
+
+
+// 3. Find the Second Smallest and Second Largest in an Array - Different Ways
+
+
+
+// Method 1: Sort and Pick
+
+public class SecondMinMaxSort {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19};
+
+        Arrays.sort(arr);
+
+        System.out.println("Second smallest: " + arr[1]);
+
+        System.out.println("Second largest: " + arr[arr.length - 2]);
+
+    }
+
+}
+
+
+
+// Method 2: Traverse with Variables
+
+public class SecondMinMaxTraverse {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19};
+
+        int min = Integer.MAX_VALUE, secondMin = Integer.MAX_VALUE;
+
+        int max = Integer.MIN_VALUE, secondMax = Integer.MIN_VALUE;
+
+
+
+        for (int num : arr) {
+
+            if (num < min) {
+
+                secondMin = min;
+
+                min = num;
+
+            } else if (num < secondMin && num != min) {
+
+                secondMin = num;
+
+            }
+
+
+
+            if (num > max) {
+
+                secondMax = max;
+
+                max = num;
+
+            } else if (num > secondMax && num != max) {
+
+                secondMax = num;
+
+            }
+
+        }
+
+        System.out.println("Second smallest: " + secondMin);
+
+        System.out.println("Second largest: " + secondMax);
+
+    }
+
+}
+
+
+
+// Method 3: Using TreeSet to Remove Duplicates and Sort
+
+import java.util.*;
+
+
+
+public class SecondMinMaxTreeSet {
+
+    public static void main(String[] args) {
+
+        int[] arr = {12, 3, 7, 1, 19, 3, 19};
+
+        TreeSet<Integer> set = new TreeSet<>();
+
+        for (int num : arr) {
+
+            set.add(num);
+
+        }
+
+        Integer[] sorted = set.toArray(new Integer[0]);
+
+        System.out.println("Second smallest: " + sorted[1]);
+
+        System.out.println("Second largest: " + sorted[sorted.length - 2]);
+
+    }
+
+}
+
+
+
+// Existing Content: Different Ways to Reverse an Array
+
+
+
+// 1. Using a for loop (in-place reversal)
+
+public class ReverseArrayInPlace {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int start = 0, end = arr.length - 1;
+
+        while (start < end) {
+
+            int temp = arr[start];
+
+            arr[start] = arr[end];
+
+            arr[end] = temp;
+
+            start++;
+
+            end--;
+
+        }
+
+        System.out.println("Reversed Array: " + java.util.Arrays.toString(arr));
+
+    }
+
+}
+
+
+
+// 2. Using a for loop with a new array
+
+public class ReverseArrayNewArray {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int[] reversed = new int[arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+
+            reversed[i] = arr[arr.length - 1 - i];
+
+        }
+
+        System.out.println("Reversed Array: " + java.util.Arrays.toString(reversed));
+
+    }
+
+}
+
+
+
+// 3. Using Collections.reverse() with List
+
+import java.util.*;
+
+
+
+public class ReverseArrayUsingCollections {
+
+    public static void main(String[] args) {
+
+        Integer[] arr = {1, 2, 3, 4, 5};
+
+        List<Integer> list = Arrays.asList(arr);
+
+        Collections.reverse(list);
+
+        System.out.println("Reversed Array: " + list);
+
+    }
+
+}
+
+
+
+// 4. Using recursion
+
+public class ReverseArrayRecursion {
+
+    public static void reverse(int[] arr, int start, int end) {
+
+        if (start >= end) return;
+
+        int temp = arr[start];
+
+        arr[start] = arr[end];
+
+        arr[end] = temp;
+
+        reverse(arr, start + 1, end - 1);
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        reverse(arr, 0, arr.length - 1);
+
+        System.out.println("Reversed Array: " + java.util.Arrays.toString(arr));
+
+    }
+
+}
+
+
+
+// 5. Using Java 8 Streams
+
+import java.util.*;
+
+import java.util.stream.IntStream;
+
+
+
+public class ReverseArrayStream {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int[] reversed = IntStream.rangeClosed(1, arr.length)
+
+                                   .map(i -> arr[arr.length - i])
+
+                                   .toArray();
+
+        System.out.println("Reversed Array: " + Arrays.toString(reversed));
+
+    }
+
+}
+
+
+
+
+
+//Rearrange the array in increasing-decreasing order 
+
+
+
+// Approach 1: Sort + Manual Split
+
+import java.util.*;
+
+
+
+public class Approach1 {
+
+    public static void main(String[] args) {
+
+        int[] arr = {5, 2, 9, 1, 7, 6, 3};
+
+        int[] result = rearrangeWithManualSplit(arr);
+
+        System.out.println("Approach 1 (Manual Split): " + Arrays.toString(result));
+
+    }
+
+
+
+    public static int[] rearrangeWithManualSplit(int[] input) {
+
+        int[] arr = Arrays.copyOf(input, input.length);
+
+        Arrays.sort(arr);
+
+        int[] result = new int[arr.length];
+
+        int mid = arr.length / 2;
+
+        for (int i = 0; i < mid; i++) {
+
+            result[i] = arr[i];
+
+        }
+
+        int index = mid;
+
+        for (int i = arr.length - 1; i >= mid; i--) {
+
+            result[index++] = arr[i];
+
+        }
+
+        return result;
+
+    }
+
+}
+
+
+
+// Approach 2: Using Collections
+
+import java.util.*;
+
+
+
+public class Approach2 {
+
+    public static void main(String[] args) {
+
+        int[] arr = {5, 2, 9, 1, 7, 6, 3};
+
+        List<Integer> result = rearrangeWithCollections(arr);
+
+        System.out.println("Approach 2 (Collections): " + result);
+
+    }
+
+
+
+    public static List<Integer> rearrangeWithCollections(int[] input) {
+
+        Integer[] boxed = Arrays.stream(input).boxed().toArray(Integer[]::new);
+
+        Arrays.sort(boxed);
+
+        List<Integer> result = new ArrayList<>();
+
+        int mid = boxed.length / 2;
+
+        for (int i = 0; i < mid; i++) {
+
+            result.add(boxed[i]);
+
+        }
+
+        for (int i = boxed.length - 1; i >= mid; i--) {
+
+            result.add(boxed[i]);
+
+        }
+
+        return result;
+
+    }
+
+}
+
+
+
+// Approach 3: Using Stream API
+
+import java.util.*;
+
+import java.util.stream.*;
+
+
+
+public class Approach3 {
+
+    public static void main(String[] args) {
+
+        int[] arr = {5, 2, 9, 1, 7, 6, 3};
+
+        int[] result = rearrangeWithStreamAPI(arr);
+
+        System.out.println("Approach 3 (Stream API): " + Arrays.toString(result));
+
+    }
+
+
+
+    public static int[] rearrangeWithStreamAPI(int[] input) {
+
+        int[] sorted = Arrays.stream(input).sorted().toArray();
+
+        int mid = sorted.length / 2;
+
+        return IntStream.range(0, sorted.length)
+
+                .map(i -> (i < mid) ? sorted[i] : sorted[sorted.length - (i - mid) - 1])
+
+                .toArray();
+
+    }
+
+}
+
+
+
+
+
+// Guide: Different Ways to Calculate Sum of Elements in an Array in Java
+
+
+
+import java.util.Arrays;
+
+import java.util.stream.IntStream;
+
+
+
+// 1. Using a for loop
+
+public class ForLoopSum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int sum = 0;
+
+        for(int i = 0; i < arr.length; i++) {
+
+            sum += arr[i];
+
+        }
+
+        System.out.println("Sum using for loop = " + sum);
+
+    }
+
+}
+
+
+
+// 2. Using enhanced for loop (for-each)
+
+class EnhancedForLoopSum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int sum = 0;
+
+        for(int num : arr) {
+
+            sum += num;
+
+        }
+
+        System.out.println("Sum using enhanced for loop = " + sum);
+
+    }
+
+}
+
+
+
+// 3. Using Java 8 Stream API
+
+class StreamApiSum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int sum = Arrays.stream(arr).sum();
+
+        System.out.println("Sum using Stream API = " + sum);
+
+    }
+
+}
+
+
+
+// 4. Using recursion
+
+class RecursiveSum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int sum = recursiveSum(arr, 0);
+
+        System.out.println("Sum using recursion = " + sum);
+
+    }
+
+
+
+    public static int recursiveSum(int[] arr, int index) {
+
+        if(index == arr.length) return 0;
+
+        return arr[index] + recursiveSum(arr, index + 1);
+
+    }
+
+}
+
+
+
+// 5. Using while loop
+
+class WhileLoopSum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int sum = 0;
+
+        int i = 0;
+
+        while(i < arr.length) {
+
+            sum += arr[i];
+
+            i++;
+
+        }
+
+        System.out.println("Sum using while loop = " + sum);
+
+    }
+
+}
+
+
+
+// 6. Using do-while loop
+
+class DoWhileLoopSum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int sum = 0;
+
+        int j = 0;
+
+        do {
+
+            sum += arr[j];
+
+            j++;
+
+        } while(j < arr.length);
+
+        System.out.println("Sum using do-while loop = " + sum);
+
+    }
+
+}
+
+
+
+// 7. Using IntStream (Java 8)
+
+class IntStreamSum {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int sum = IntStream.of(arr).sum();
+
+        System.out.println("Sum using IntStream = " + sum);
+
+    }
+
+}
+
+
+
+// Rotating an Array by K Elements in Java
+
+
+
+import java.util.*;
+
+
+
+// ✅ Method 1: Using Extra Array (Left Rotation)
+
+public class RotateLeftExtraArray {
+
+    public static void rotateLeft(int[] arr, int k) {
+
+        int n = arr.length;
+
+        int[] result = new int[n];
+
+
+
+        k = k % n;
+
+
+
+        for (int i = 0; i < n; i++) {
+
+            result[i] = arr[(i + k) % n];
+
+        }
+
+
+
+        System.arraycopy(result, 0, arr, 0, n);
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5, 6};
+
+        int k = 2;
+
+        rotateLeft(arr, k);
+
+        System.out.println("Array after left rotation: " + Arrays.toString(arr));
+
+    }
+
+}
+
+
+
+
+
+
+
+// ✅ Method 2: Using Extra Array (Right Rotation)
+
+package test;
+
+import java.util.Arrays;
+
+public class test {
+
+	
+
+	
+
+	
+
+	public static void main(String[] args) {
+
+	
+
+		int[] arr = {1, 2, 3, 4, 5, 6};
+
+		
+
+		int size=arr.length;
+
+		int n=2;
+
+		for( int j=1;j<=n;j++) {
+
+			int last=arr[size-1];
+
+			for( int i=size-1;i>0;i--) {
+
+				arr[i]=arr[i-1];
+
+			}
+
+			arr[0]=last;
+
+		}
+
+		System.out.println(Arrays.toString(arr));
+
+		
+
+	}
+
+	
+
+
+
+}
+
+
+
+
+
+// ✅ Method 3: In-place Reversal Algorithm (Right Rotation)
+
+public class RotateRightInPlace {
+
+    public static void rotateRightInPlace(int[] arr, int k) {
+
+        int n = arr.length;
+
+        k %= n;
+
+
+
+        reverse(arr, 0, n - 1);      // Reverse the whole array
+
+        reverse(arr, 0, k - 1);      // Reverse the first k elements
+
+        reverse(arr, k, n - 1);      // Reverse the remaining elements
+
+    }
+
+
+
+    private static void reverse(int[] arr, int start, int end) {
+
+        while (start < end) {
+
+            int temp = arr[start];
+
+            arr[start++] = arr[end];
+
+            arr[end--] = temp;
+
+        }
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5, 6};
+
+        int k = 2;
+
+        rotateRightInPlace(arr, k);
+
+        System.out.println("Array after right rotation (in-place): " + Arrays.toString(arr));
+
+    }
+
+}
+
+// Java code to find the average of all elements in an array using different separate files/methods
+
+// 1. Using Basic For Loop
+public class AverageBasicForLoop {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int sum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+
+        double average = (double) sum / arr.length;
+        System.out.println("Average using Basic For Loop: " + average);
+    }
+}
+
+// 2. Using Enhanced For Loop
+public class AverageEnhancedForLoop {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int sum = 0;
+
+        for (int num : arr) {
+            sum += num;
+        }
+
+        double average = (double) sum / arr.length;
+        System.out.println("Average using Enhanced For Loop: " + average);
+    }
+}
+
+// 3. Using Java 8 Streams
+import java.util.Arrays;
+
+public class AverageUsingStreams {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        double average = Arrays.stream(arr).average().orElse(0.0);
+        System.out.println("Average using Java 8 Streams: " + average);
+    }
+}
+
+
+
+// 5. Using While Loop
+public class AverageWhileLoop {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int sum = 0, i = 0;
+
+        while (i < arr.length) {
+            sum += arr[i];
+            i++
+        }
+
+        double average = (double) sum / arr.length;
+        System.out.println("Average using While Loop: " + average);
+    }
+}
+
+// 6. Using Do-While Loop
+public class AverageDoWhileLoop {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int sum = 0, i = 0;
+
+        do {
+            sum += arr[i];
+            i++;
+        } while (i < arr.length);
+
+        double average = (double) sum / arr.length;
+        System.out.println("Average using Do-While Loop: " + average);
+    }
+}
+
+
+// Find the median of the given array 
+
+ 1. Using Sorting (Basic Approach)
+
+import java.util.Arrays;
+
+public class Median {
+    public static void main(String[] args) {
+        int[] array = {12, 5, 7, 9, 3};
+        System.out.println("Median: " + findMedian(array));
+    }
+
+    public static double findMedian(int[] array) {
+        Arrays.sort(array);
+        int n = array.length;
+
+        if (n % 2 == 1) {
+            return array[n / 2];
+        } else {
+            return (array[n / 2 - 1] + array[n / 2]) / 2.0;
+        }
+    }
+}
+
+
+2 . using strem api 
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class Median {
+    public static void main(String[] args) {
+        int[] array = {12, 5, 7, 9, 3}; // Example array
+        System.out.println("Median: " + findMedian(array));
+    }
+
+    public static double findMedian(int[] array) {
+        // Sort the array using Streams
+        int[] sortedArray = Arrays.stream(array)
+                                  .sorted()
+                                  .toArray();  // Convert the stream back to an array
+        
+        int n = sortedArray.length;
+        
+        // If the length is odd, return the middle element
+        if (n % 2 == 1) {
+            return sortedArray[n / 2];
+        } else {
+            // If the length is even, return the average of the two middle elements
+            return (sortedArray[(n - 1) / 2] + sortedArray[n / 2]) / 2.0;
+        }
+    }
+}
+
+
+
+3 not sorted 
+
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class Median {
+    public static void main(String[] args) {
+        int[] array = {12, 5, 7, 9, 3}; // Example array
+        System.out.println("Median: " + findMedian(array));
+    }
+
+    public static double findMedian(int[] array) {
+        int n = array.length;
+
+       
+        if (n % 2 == 1) {
+            return findKthSmallest(array, n / 2);
+        } else {
+            
+            double leftMiddle = findKthSmallest(array, (n - 1) / 2);
+            double rightMiddle = findKthSmallest(array, n / 2);
+            return (leftMiddle + rightMiddle) / 2.0;
+        }
+    }
+
+   
+    public static int findKthSmallest(int[] array, int k) {
+        return IntStream.of(array)
+                        .sorted()  // Sorting just the stream for simplicity (this is the workaround)
+                        .skip(k)   // Skip the first 'k' elements
+                        .findFirst() // Take the next element
+                        .getAsInt();
+    }
+}
+
+
+
+//Remove duplicates from a sorted array 
+
+1. Two Pointers (In-Place & Most Efficient)
+
+package test;
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class test {
+	
+	
+	
+	public static void main(String[] args) {
+	
+		int[] arr = {1,2,3,4,5,6,5,3};
+		Arrays.sort(arr);
+		
+	int newlen=remdep(arr);
+	
+	for( int i=0;i<newlen;i++) {
+		System.out.print(arr[i]+" ");
+	}
+	
+	
+		
+	
+	}
+
+	private static int remdep(int[] arr) {
+	if( arr.length==0) return 0;
+
+	int j=0;
+	for( int i=1;i<arr.length;i++) {
+		if(arr[i]!=arr[j]) {
+			j++;
+			arr[j]=arr[i];
+		}
+		
+	}
+	return j+1;
+	}
+	
+	
+}
+
+
+
+2method Using a Temporary Array
+
+
+
+
+using package test;
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class test {
+	
+	
+	
+	public static void main(String[] args) {
+	
+		int[] arr = {1,2,3,4,5,6,5,3};
+		 Arrays.sort(arr);
+	 int nlen=rem(arr);
+	 
+	for( int i=0;i<nlen;i++) {
+		System.out.print(arr[i]+" ");
+	}
+	 
+		
+	
+	}
+
+	private static int rem(int[] arr) {
+	 if( arr.length==0)return 0;
+	 
+	 int [] temp=new int[arr.length];
+	 int j=0;
+	 for( int i=0;i<arr.length-1;i++) {
+		 if( arr[i]!= arr[i+1]) {
+			 temp[j++]=arr[i];
+		 }
+	 }
+	temp[j++]=arr[arr.length-1];
+	
+	for( int i=0;i<j;i++) {
+		arr[i]=temp[i];
+	}
+	return j;
+	 
+	}
+}
+
+
+
+3. method 
+
+Using LinkedHashSet
+
+
+
+package test;
+
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.stream.IntStream;
+
+public class test {
+	
+	
+	
+	public static void main(String[] args) {
+	
+		int[] arr = {1,2,3,4,5,6,5,3};
+		// Arrays.sort(arr);
+	 int nlen=rem(arr);
+	 
+	for( int i=0;i<nlen;i++) {
+		System.out.print(arr[i]+" ");
+	}
+	 
+		
+	}
+
+
+	private static int rem(int[] arr) {
+	  Set<Integer> set=new LinkedHashSet<>();
+	for( int num:arr) {
+		set.add(num);
+	}
+	int i=0;
+	for( int num:set) {
+		arr[i++]=num;
+	}
+	return set.size();
+
+		
+
+}
+	}
+
+4th method using strem api
+
+
+
+
+
+
+	int[] arr = {1,2,3,4,5,6,5,3};
+	 int res[]=Arrays.stream(arr).distinct().toArray();
+	 
+	
+	 System.out.print(Arrays.toString(res));
+		
+		
+		
+		
+5th Brute Force method
+
+
+package test;
+
+import java.util.Arrays;
+
+public class test {
+	
+	
+	
+	public static void main(String[] args) {
+	
+		int[] arr = {1,1,2,3,4,3,5,6,5,3};
+	 int res=find(arr);
+	 for( int i=0;i<res;i++) {
+		 System.out.print(arr[i]+" ");
+	 }
+		
+	}
+
+	private static int find(int[] arr) {
+	 int n=arr.length;
+	 if(n==0)return 0;
+	 int index=1;
+	 for( int i=1;i<n;i++) {
+		 boolean isdup=false;
+		 for( int j=0;j<index;j++) {
+			 if(arr[i]==arr[j]) {
+				 isdup = true;
+				 break;
+			 }
+		 }
+		 if(!isdup) {
+			 arr[index++]=arr[i];
+		 }
+	 }
+	 return index;
+	}
+
+
+		}
+ 
+
+
+
+// Remove duplicates from an unsorted array 
+
+ 2 methods  using hashset and strem api
+ 	public static void main(String[] args) {
+	
+		int[] arr = {1,1,2,3,4,3,5,6,5,3};
+//	Set<Integer> un=new HashSet<>();
+//	for( int i:arr) {
+//		un.add(i);
+//	}
+//	System.out.print(un+" ");
+		
+		
+		List<Integer> res=Arrays.stream(arr).boxed().distinct().collect(Collectors.toList());
+		System.out.print(res);
+	
+	 }
+
+	
+}
+
+
+
+
+ 
+ 
+
+
